@@ -33,7 +33,7 @@ const Button: React.FC<ButtonProps> = ({
                     return 'bg-brand-600 text-white hover:bg-brand-700 disabled:bg-brand-200'
                     break;
                 case 'gray':
-                    return 'bg-gray-600 text-white hover:bg-gray-700 disabled:bg-gray-200'
+                    return 'bg-cgray-600 text-white hover:bg-gray-700 disabled:bg-cgray-200'
                     break;
                 case 'error':
                     return 'bg-error-600 text-white hover:bg-error-700 disabled:bg-error-200'
@@ -55,7 +55,7 @@ const Button: React.FC<ButtonProps> = ({
                     return 'bg-brand-50 text-brand-700 hover:bg-brand-100 disabled:bg-brand-25 disabled:text-brand-300'
                     break;
                 case 'gray':
-                    return 'bg-gray-50 text-gray-700 hover:bg-gray-100 disabled:bg-gray-25 disabled:text-brand-300'
+                    return 'bg-cgray-50 text-cgray-700 hover:bg-cgray-100 disabled:bg-cgray-25 disabled:text-brand-300'
                     break;
                 case 'error':
                     return 'bg-error-50 text-error-700 hover:bg-error-100 disabled:bg-error-25 disabled:text-error-300'
@@ -77,7 +77,7 @@ const Button: React.FC<ButtonProps> = ({
                     return 'bg-transparent text-brand-700 hover:bg-brand-50 disabled:bg-transparent disabled:text-brand-300'
                     break;
                 case 'gray':
-                    return 'bg-transparent text-gray-700 hover:bg-gray-50 disabled:bg-transparent disabled:text-gray-300'
+                    return 'bg-transparent text-cgray-700 hover:bg-cgray-50 disabled:bg-transparent disabled:text-cgray-300'
                     break;
                 case 'error':
                     return 'bg-transparent text-error-700 hover:bg-error-50 disabled:bg-transparent disabled:text-error-300'
@@ -99,7 +99,7 @@ const Button: React.FC<ButtonProps> = ({
                     return 'bg-transparent text-brand-700 hover:bg-brand-50 disabled:bg-transparent disabled:text-brand-300'
                     break;
                 case 'gray':
-                    return 'bg-transparent text-gray-700 hover:bg-gray-50 disabled:bg-transparent disabled:text-gray-300'
+                    return 'bg-transparent text-cgray-700 hover:bg-cgray-50 disabled:bg-transparent disabled:text-cgray-300'
                     break;
                 case 'error':
                     return 'bg-transparent text-error-700 hover:bg-error-50 disabled:bg-transparent disabled:text-error-300'
