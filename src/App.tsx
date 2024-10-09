@@ -1,34 +1,59 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BsGithub } from 'react-icons/bs'
 import './App.css'
+import Button from './components/Button'
+import IconButton from './components/IconButton'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='flex flex-col p-8 gap-2'>
+      <div className='flex flex-row gap-2'>
+        <Button
+          size='sm'
+          hierarchy='primary'
+          onClick={() => alert('Hello')}
+          startIcon={<BsGithub size={20} />}
+        >Button</Button>
+        <Button
+          size='sm'
+          hierarchy='secondary'
+          startIcon={<BsGithub size={20} />}
+        >Button</Button>
+        <Button
+          size='sm'
+          startIcon={<BsGithub size={20} />}
+          hierarchy='outlined'
+        >Button</Button>
+        <Button
+          size='sm'
+          startIcon={<BsGithub size={20} />}
+          hierarchy='tertiary'
+        >Button</Button>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div className='flex flex-row gap-2'>
+        <IconButton
+          onClick={() => alert('Hello')}
+          size='sm'
+          hierarchy='primary'>
+          <BsGithub fontSize="inherit" ></BsGithub>
+        </IconButton>
+        <IconButton
+          size='sm'
+          hierarchy='secondary'>
+          <BsGithub fontSize="inherit" ></BsGithub>
+        </IconButton>
+        <IconButton
+          size='sm'
+          hierarchy='outlined'>
+          <BsGithub fontSize="inherit" ></BsGithub>
+        </IconButton>
+        <IconButton
+          size='sm'
+          hierarchy='tertiary'>
+          <BsGithub fontSize="inherit" ></BsGithub>
+        </IconButton>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
