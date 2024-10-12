@@ -21,6 +21,18 @@ export default {
         "brand-800": "#53389E",
         "brand-900": "#42307D",
 
+        // "brand-25": "#FFFBFF",
+        // "brand-50": "#F6EEFF",
+        // "brand-100": "#E9DDFF",
+        // "brand-200": "#CFBCFF",
+        // "brand-300": "#B69DF7",
+        // "brand-400": "#9A83DB",
+        // "brand-500": "#8069BF",
+        // "brand-600": "#6750A4",
+        // "brand-700": "#4F378A",
+        // "brand-800": "#381E72",
+        // "brand-900": "#22005D",
+
         //gray
         "cgray-25": "#FCFCFD",
         "cgray-50": "#F9FAFB",

@@ -51,7 +51,6 @@ const InputField: React.FC<InputFieldProps> = ({
     const [isFocused, setIsFocused] = useState(false)
     const [showHint, setShowHint] = useState(true)
 
-    const customInputClassName = `px-3.5 py-2.5 bg-transparent w-full outline-none ${inputClassName}`
     const customWrapperClassName = `flex flex-row pr-3.5 items-center justify-between my-1.5 w-full rounded-lg text-base leading-6 placeholder:text-cgray-500 outline-none ${disabled ? 'bg-cgray-50 border-cgray-300' : ''} ${wrapperClassName}`
     const customContainerClassName = `flex flex-col min-w-[320px] ${disabled ? 'pointer-events-none' : ''} ${containerClassName}`
     const customLabelClassName = `w-fit text-cgray-700 text-sm leading-5 font-medium ${labelClassName}`
@@ -116,7 +115,7 @@ const InputField: React.FC<InputFieldProps> = ({
                     }}
                 className={customWrapperClassName}>
                 <input
-                    className={customInputClassName}
+                    className={`px-3.5 py-2.5 bg-transparent w-full outline-none  ${inputClassName}`}
                     placeholder={placeholder}
                     style={{ ...inputStyle }}
                     disabled={disabled}
