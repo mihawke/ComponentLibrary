@@ -36,7 +36,11 @@ function App() {
   return (
     <div className='flex flex-col p-8 gap-2'>
       <div className='flex flex-row gap-2'>
-        <RadioButton/>
+        <RadioButton size='sm'/>
+        <RadioButton size='md'/>
+        <RadioButton size='lg'/>
+        <RadioButton size='xl'/>
+        <RadioButton size='2xl'/>
       </div>
       <div className='flex flex-row gap-2'>
         <Link href="#">Link</Link>
