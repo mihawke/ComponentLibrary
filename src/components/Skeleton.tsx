@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 
 interface SkeletonProps {
-    variant?: 'text' | 'circular' | 'reactangular' | 'rounded'
+    variant?: 'text' | 'circular' | 'rectangular' | 'rounded'
     width?: number
     height?: number
     fontSize?: number
@@ -29,7 +29,7 @@ const Skeleton: React.FC<SkeletonProps> = ({
             case 'circular':
                 return 'rounded-full'
                 break;
-            case 'reactangular':
+            case 'rectangular':
                 return ''
                 break;
             case 'rounded':
