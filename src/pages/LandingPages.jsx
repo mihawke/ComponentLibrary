@@ -2,6 +2,11 @@
 import React, { useEffect, useState } from 'react';
 import Template1 from '../templates/Template1/Template1';
 import Template2 from '../templates/Template2/Template2';
+import Template3 from '../templates/Template3/Template3';
+import Template4 from '../templates/Template4/Template4';
+import Template5 from '../templates/Template5/Template5';
+import Template6 from '../templates/Template6/Template6';
+
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
 import IconButton from '../components/IconButton';
 
@@ -19,6 +24,14 @@ function LandingPages() {
         return <Template1 />;
       case 2:
         return <Template2 />;
+      case 3:
+        return <Template3 />;
+      case 4:
+        return <Template4 />;
+      case 5:
+        return <Template5 />;
+      case 6:
+        return <Template6 />;
       default:
         return <Template1 />;
     }
@@ -28,9 +41,13 @@ function LandingPages() {
     if (page == 1) {
       setIsDisabled({ ...isDisabled, left: true, right: false })
     }
-    else if (page == 2) {
+    else if (page == 6) {
       setIsDisabled({ ...isDisabled, left: false, right: true })
     }
+    else{
+      setIsDisabled({ ...isDisabled, left: false, right: false })
+    }
+    window.scrollTo(0, 0);
   }, [page])
 
 
@@ -45,7 +62,7 @@ function LandingPages() {
           <p>
             <span>{page} </span>
             of
-            <span> 2</span>
+            <span> 6</span>
           </p>
         </div>
         <IconButton size='lg' hierarchy="primary" onClick={() => setPage(prev => prev + 1)} className='rounded-tl-none rounded-bl-none' disabled={isDisabled.right}>

@@ -1,0 +1,666 @@
+.container {
+    width: 99vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #181818;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 120px;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-bottom: 35px; */
+}
+
+.header .logo {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -0.13px;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.header .navbar {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.header .navbar .item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.header .navbar .item:hover {}
+
+.header .login {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 36px 10px 36px;
+    border: none;
+    -webkit-box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    -moz-box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.header .login:hover {
+    background-color: #c7c7c9;
+    transition: ease 0.3s;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0 50px 0;
+    text-align: center;
+}
+
+.hero .text1 {
+    font-size: 95px;
+    font-weight: 500;
+    line-height: 115px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 17px;
+}
+
+.hero .text2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.hero .frame {
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    column-gap: 35px;
+
+}
+
+.hero .frame .button1 {
+    /* width: 180px;
+    height: 65px; */
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    background-color: #4452FE;
+    border: none;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.hero .frame .button2 {
+    /* width: 180px;
+    height: 65px; */
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    -moz-box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    border: none;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/*  */
+
+.screen {
+    display: flex;
+}
+
+/*  */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 62px 50px 62px 50px;
+}
+
+.features .text1 {
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 10px;
+}
+
+.features .text2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 80px;
+}
+
+.features .frame {
+    display: flex;
+    flex-direction: row;
+}
+
+.features .frame1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    row-gap: 25px;
+
+}
+
+.features .frame1 .card {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    text-align: left;
+}
+
+.features .frame1 .card .heading {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.features .frame1 .card .text1 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 10px;
+}
+
+.features .frame1 .card .text2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 10px;
+    height: 116px;
+}
+
+/*  */
+
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 62px 50px 62px 50px;
+    margin-bottom: 100px;
+}
+
+.contents .text1 {
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 10px;
+}
+
+.contents .text2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 44px;
+}
+
+.contents .frame {
+    display: flex;
+    flex-direction: row;
+    column-gap: 33px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 476px;
+    height: 620px;
+    background-color: #FFFFFF;
+    padding: 40px 0 40px 0;
+    border-radius: 10px;
+}
+
+.contents .card .text1 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    margin: 0;
+    padding: 10px;
+}
+
+.contents .card .text2 {
+    font-size: 16px;
+    font-weight: 400;
+    width: 300px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #8895AA;
+    margin: 0;
+    padding: 10px;
+}
+
+.contents .card .button {
+    /* width: 180px;
+    height: 65px; */
+    padding: 14px 46px 14px 46px;
+    display: flex;
+    width: fit-content;
+    background-color: #4452FE;
+    border: none;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/*  */
+
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 62px 50px 62px 50px;
+    margin-bottom: 100px;
+}
+
+.gallery .text1 {
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 10px;
+}
+
+.gallery .text2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 44px;
+}
+
+.gallery .frame {
+    display: flex;
+    flex-direction: row;
+    column-gap: 33px;
+    row-gap: 33px;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    flex-wrap: wrap;
+}
+
+.gallery .frame img{
+    border-radius: 12px;
+}
+
+.gallery .button {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 36px 10px 36px;
+    border: none;
+    -webkit-box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    -moz-box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 44px;
+}
+
+/*  */
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 62px 50px 62px 50px;
+    margin-bottom: 100px;
+}
+
+.partners .text1 {
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 10px;
+}
+
+.partners .text2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 44px;
+}
+
+.partners .frame {
+    display: flex;
+    flex-direction: row;
+    column-gap: 74px;
+    row-gap: 33px;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners .frame img{
+    border-radius: 12px;
+}
+
+.partners .button {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 36px 10px 36px;
+    border: none;
+    -webkit-box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    -moz-box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    box-shadow: inset 0px 0px 0px 1px #FFFFFF;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-top: 44px;
+}
+
+/*  */
+
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 62px 50px 62px 50px;
+    margin-bottom: 100px;
+}
+
+.testimonials .text1 {
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 10px;
+}
+
+.testimonials .text2 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 10px;
+    margin-bottom: 44px;
+}
+
+.testimonials .frame {
+    display: flex;
+    flex-direction: row;
+    column-gap: 33px;
+    row-gap: 33px;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    flex-wrap: wrap;
+}
+
+
+.testimonials .frame .card {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 40px;
+}
+
+.testimonials .frame .card .heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.testimonials .frame .card .text1 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0px;
+    margin-left: 13px;
+}
+.testimonials .frame .card .text3 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0px;
+    opacity: 0.8;
+}
+.testimonials .frame .card .text2 {
+    font-size: 16px;
+    font-weight: 400;
+    width: 324px;
+    line-height: 24px;
+    text-align: left;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0px;
+}
+
+/*  */
+
+
+.advertisement {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #343434;
+    border-radius: 33px;
+    margin: 80px;
+}
+
+.advertisement .text1 {
+    font-size: 52px;
+    font-weight: 400;
+    width: 500px;
+    line-height: 62px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0px;
+}
+
+.advertisement .frame {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    row-gap: 37px;
+    padding: 80px;
+}
+
+
+.advertisement .button {
+    /* width: 180px;
+    height: 65px; */
+    padding: 14px 46px 14px 46px;
+    display: flex;
+    width: fit-content;
+    background-color: #4452FE;
+    border: none;
+    font-size: 17px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+/*  */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.footer .logo {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -0.13px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.footer .frame {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 100px 0;
+}
+
+.footer .frame .info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.footer .frame .socials {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    margin-top: 40px;
+}
+
+.footer .frame .links {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+
+.footer .frame .column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .frame .title {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.1px;
+    font-weight: 400;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.footer .frame .item {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+    font-weight: 400;
+    text-align: left;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    opacity: 0.65;
+}
