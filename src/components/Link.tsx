@@ -12,7 +12,6 @@ interface LinkProps {
 const Link: React.FC<LinkProps> = ({
     href,
     target,
-    variant,
     children,
     className,
     style,

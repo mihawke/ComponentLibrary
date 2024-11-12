@@ -15,8 +15,6 @@ const Slider: React.FC<SliderPros> = ({
     max = 100,
     style,
     className,
-    id,
-    name,
     value = min,
     onChange
 }) => {

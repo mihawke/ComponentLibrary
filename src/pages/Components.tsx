@@ -1,5 +1,4 @@
-import React from 'react'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { GoDotFill } from 'react-icons/go'
 import { BsGithub } from 'react-icons/bs'
 import Button from '../components/Button'
