@@ -1,5 +1,5 @@
 // LandingPageShowcase.jsx
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Template1 from '../templates/Template1/Template1';
 import Template2 from '../templates/Template2/Template2';
 import Template3 from '../templates/Template3/Template3';
@@ -44,7 +44,7 @@ function LandingPages() {
     else if (page == 6) {
       setIsDisabled({ ...isDisabled, left: false, right: true })
     }
-    else{
+    else {
       setIsDisabled({ ...isDisabled, left: false, right: false })
     }
     window.scrollTo(0, 0);

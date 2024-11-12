@@ -1,4 +1,3 @@
-import React from 'react';
 import background from './bg.jpg'
 
 function Template1() {

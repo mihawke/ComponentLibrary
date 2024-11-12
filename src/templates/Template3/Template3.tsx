@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './Frontpage3.module.css'
 import { FaLocationDot } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";

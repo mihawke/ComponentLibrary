@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './Frontpage4.module.css'
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";

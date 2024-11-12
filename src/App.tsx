@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css'
-import Components from './pages/Components';
-import Home from './pages/Home';
-import LandingPages from './pages/LandingPages';
+import Components from './pages/Components.tsx';
+import Home from './pages/Home.tsx';
+import LandingPages from './pages/LandingPages.tsx';
 import { FaBars } from 'react-icons/fa';
 import IconButton from './components/IconButton';
 

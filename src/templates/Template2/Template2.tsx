@@ -1,4 +1,3 @@
-import React from 'react';
 import background from './Background.png'
 import card1Bg from './card1bg.png'
 import card2Bg from './card2bg.jpg'
