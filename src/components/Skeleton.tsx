@@ -1,25 +1,22 @@
-import React, { useEffect } from "react"
+import React from "react"
 
 interface SkeletonProps {
     variant?: 'text' | 'circular' | 'rectangular' | 'rounded'
-    width?: number
-    height?: number
+    width?: number | string
+    height?: number | string
     fontSize?: number
+    style?: React.CSSProperties
+    className?: string
 }
 
 const Skeleton: React.FC<SkeletonProps> = ({
-    variant,
-    width,
-    height,
-    fontSize
+    variant = 'rectangular',
+    width = 120,
+    height = 30,
+    fontSize,
+    style,
+    className
 }) => {
-
-    useEffect(() => {
-
-        return () => {
-
-        };
-    }, [])
 
     const getSize = () => {
         switch (variant) {
@@ -41,10 +38,11 @@ const Skeleton: React.FC<SkeletonProps> = ({
     }
 
     return (
-        <div className={`bg-cgray-400 animate-pulse ${getSize()}`}
+        <div className={`bg-cgray-400 animate-pulse ${getSize()} ${className}`}
             style={{
-                minWidth: width,
-                minHeight: height
+                width: width,
+                height: height,
+                ...style
             }}
         >
             <p
@@ -52,11 +50,6 @@ const Skeleton: React.FC<SkeletonProps> = ({
                     fontSize: fontSize,
                     color: 'transparent'
                 }}> text</p>
-            <style>
-                {`
-                
-                `}
-            </style>
         </div>
     )
 }

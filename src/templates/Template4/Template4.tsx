@@ -3,7 +3,14 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
-
+import Brands from './assets/Brands.png'
+import product from './assets/product.png'
+import feature1 from './assets/feature1.png'
+import feature2 from './assets/feature2.png'
+import feature3 from './assets/feature3.png'
+import user1 from './assets/user1.png'
+import star from './assets/star.png'
+import contact from './assets/contact.png'
 
 const Template4 = () => {
     return (
@@ -48,7 +55,7 @@ const Template4 = () => {
             <div className={styles.brands}>
                 <div className={styles.frame1}>
                     <div className={styles.line}></div>
-                    <img className={styles.image} src='/src/assets/images/template4/Brands.png'></img>
+                    <img className={styles.image} src={Brands}></img>
                     <div className={styles.line}></div>
                 </div>
             </div>
@@ -57,7 +64,7 @@ const Template4 = () => {
 
             <div className={styles.products}>
                 <div className={styles.frame}>
-                    <img className={styles.image} src='/src/assets/images/template4/product.png'></img>
+                    <img className={styles.image} src={product}></img>
                 </div>
             </div>
 
@@ -66,21 +73,21 @@ const Template4 = () => {
             <div className={styles.features}>
                 <div className={styles.frame1}>
                     <div className={styles.card}>
-                        <img className={styles.image} src='/src/assets/images/template4/feature1.png'></img>
+                        <img className={styles.image} src={feature1}></img>
                         <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'center', width: 255, marginTop: 32, rowGap: 10 }}>
                             <p className={styles.title}>Feature1</p>
                             <p className={styles.subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
                     <div className={styles.card}>
-                        <img className={styles.image} src='/src/assets/images/template4/feature2.png'></img>
+                        <img className={styles.image} src={feature2}></img>
                         <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'center', width: 255, marginTop: 32, rowGap: 10 }}>
                             <p className={styles.title}>Feature2</p>
                             <p className={styles.subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
                     </div>
                     <div className={styles.card}>
-                        <img className={styles.image} src='/src/assets/images/template4/feature3.png'></img>
+                        <img className={styles.image} src={feature3}></img>
                         <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'center', width: 255, marginTop: 32, rowGap: 10 }}>
                             <p className={styles.title}>Feature3</p>
                             <p className={styles.subtitle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -95,15 +102,15 @@ const Template4 = () => {
                 <div className={styles.frame1}>
                     <p className={styles.text1}>“Wallet is a great product! All of my most important information is there - credit cards, transit cards, boarding passes, tickets, and more. And I don't need to worry because it's all in one place! thanks!”</p>
                     <div className={styles.frame2}>
-                        <img className={styles.image} src='/src/assets/images/template4/user1.png'></img>
+                        <img className={styles.image} src={user1}></img>
                         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start' }}>
                             <p className={styles.text1}>Johnny Owens</p>
                             <div style={{ display: 'flex', flexDirection: 'row', columnGap: 5 }}>
-                                <img className={styles.image} src='/src/assets/images/template4/star.png'></img>
-                                <img className={styles.image} src='/src/assets/images/template4/star.png'></img>
-                                <img className={styles.image} src='/src/assets/images/template4/star.png'></img>
-                                <img className={styles.image} src='/src/assets/images/template4/star.png'></img>
-                                <img className={styles.image} src='/src/assets/images/template4/star.png'></img>
+                                <img className={styles.image} src={star}></img>
+                                <img className={styles.image} src={star}></img>
+                                <img className={styles.image} src={star}></img>
+                                <img className={styles.image} src={star}></img>
+                                <img className={styles.image} src={star}></img>
                             </div>
                         </div>
                     </div>
@@ -120,7 +127,7 @@ const Template4 = () => {
                     <button className={styles.button}>Contact</button>
                 </div>
                 <div className={styles.frame2}>
-                    <img style={{ width: 500, height: 446, backgroundColor: '#333333' }} src='/src/assets/images/template4/contact.png'></img>
+                    <img style={{ width: 500, height: 446, backgroundColor: '#333333' }} src={contact}></img>
                 </div>
             </div>
 

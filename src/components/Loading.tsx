@@ -1,26 +1,24 @@
-import React, { useEffect } from "react"
+import React from "react"
 
 interface LoadingProps {
     size?: 'sm' | 'md' | 'lg'
+    style?: React.CSSProperties
+    className?: string
 }
 
 const Loading: React.FC<LoadingProps> = ({
-    size = 'sm'
+    size = 'sm',
+    style,
+    className
 }) => {
 
-    useEffect(() => {
-
-        return () => {
-
-        };
-    }, [])
 
     const getSize = () => {
         switch (size) {
             case 'sm':
                 return 'w-8 h-8'
                 break;
-            case 'md': 
+            case 'md':
                 return 'w-9 h-9'
                 break;
             case 'lg':
@@ -32,7 +30,7 @@ const Loading: React.FC<LoadingProps> = ({
     }
 
     return (
-        <div className={`rounded-full border-t-4 border-t-brand-600 border-4 border-cgray-100 spinner ${getSize()}`}>
+        <div className={`rounded-full border-t-4 border-t-brand-600 border-4 border-cgray-100 spinner ${getSize()} ${className}`} style={{ ...style }}>
             <style>
                 {`
                 .spinner{

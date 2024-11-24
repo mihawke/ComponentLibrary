@@ -13,14 +13,28 @@ import { FaAngleRight } from "react-icons/fa6";
 import { FaAngleLeft } from "react-icons/fa6";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { FaApple } from "react-icons/fa";
-
+import logo from './assets/Logo.png'
+import imageBase from './assets/imageBase.png'
+import f1 from './assets/f1.png'
+import f2 from './assets/f2.png'
+import f3 from './assets/f3.png'
+import f4 from './assets/f4.png'
+import f5 from './assets/f5.png'
+import f6 from './assets/f6.png'
+import discount from './assets/discount.png'
+import trace from './assets/trace.png'
+import quick from './assets/quick.png'
+import app from './assets/app.png'
+import details1 from './assets/details1.png'
+import details2 from './assets/details2.png'
+import details3 from './assets/details3.png'
 
 const Template3 = () => {
     return (
         <div className={styles.container}>
             <div className={styles.header}>
                 <div className={styles.logo}>
-                    <img className={styles.image} src='/src/assets/images/template3/logo.png'></img>
+                    <img className={styles.image} src={logo}></img>
                 </div>
                 <div className={styles.location}>
                     <div>
@@ -66,7 +80,7 @@ const Template3 = () => {
                         </div>
                     </div>
                 </div>
-                <img className={styles.image} src='/src/assets/images/template3/imageBase.png'></img>
+                <img className={styles.image} src={imageBase}></img>
             </div>
             <div className={styles.search}>
                 <div className={styles.food}>
@@ -82,27 +96,27 @@ const Template3 = () => {
                     </div>
                     <div className={styles.frame}>
                         <div className={styles.item}>
-                            <img className={styles.image} src='/src/assets/images/template3/f1.png'></img>
+                            <img className={styles.image} src={f1}></img>
                             <p className={styles.name}>Pizza</p>
                         </div>
                         <div className={styles.item}>
-                            <img className={styles.image} src='/src/assets/images/template3/f2.png'></img>
+                            <img className={styles.image} src={f2}></img>
                             <p className={styles.name}>Burger</p>
                         </div>
                         <div className={styles.item}>
-                            <img className={styles.image} src='/src/assets/images/template3/f3.png'></img>
+                            <img className={styles.image} src={f3}></img>
                             <p className={styles.name}>Noodles</p>
                         </div>
                         <div className={styles.item}>
-                            <img className={styles.image} src='/src/assets/images/template3/f4.png'></img>
+                            <img className={styles.image} src={f4}></img>
                             <p className={styles.name}>Sub-Sandwich</p>
                         </div>
                         <div className={styles.item}>
-                            <img className={styles.image} src='/src/assets/images/template3/f5.png'></img>
+                            <img className={styles.image} src={f5}></img>
                             <p className={styles.name}>Chowmein</p>
                         </div>
                         <div className={styles.item}>
-                            <img className={styles.image} src='/src/assets/images/template3/f6.png'></img>
+                            <img className={styles.image} src={f6}></img>
                             <p className={styles.name}>Steak</p>
                         </div>
                     </div>
@@ -111,14 +125,14 @@ const Template3 = () => {
                     <div className={styles.box}>
                         <div className={styles.card}>
                             <div className={styles.icon}>
-                                <img className={styles.image} src='/src/assets/images/template3/discount.png'></img>
+                                <img className={styles.image} src={discount}></img>
                             </div>
                             <p className={styles.text}>Daily<br />Discounts</p>
                         </div>
                         <div className={styles.line}></div>
                         <div className={styles.card}>
                             <div className={styles.icon}>
-                                <img className={styles.image} src='/src/assets/images/template3/trace.png'></img>
+                                <img className={styles.image} src={trace}></img>
                             </div>
                             <div>
                                 <p className={styles.text}>Live<br />Tracing</p>
@@ -127,14 +141,14 @@ const Template3 = () => {
                         <div className={styles.line}></div>
                         <div className={styles.card}>
                             <div className={styles.icon}>
-                                <img className={styles.image} src='/src/assets/images/template3/quick.png'></img>
+                                <img className={styles.image} src={quick}></img>
                             </div>
                             <p className={styles.text}>Quick<br />Delivery</p>
                         </div>
                     </div>
                 </div>
                 <div className={styles.app}>
-                    <img className={styles.image} src='/src/assets/images/template3/app.png'></img>
+                    <img className={styles.image} src={app}></img>
                     <div className={styles.info}>
                         <div className={styles.description}>
                             <p className={styles.heading}>Install the app</p>
@@ -169,12 +183,12 @@ const Template3 = () => {
                         </button>
                     </div>
                     <div style={{ display: 'flex' }}>
-                        <img style={{ height: 350, borderBottomRightRadius: '1rem', borderTopRightRadius: '1rem' }} src='/src/assets/images/template3/details1.png'></img>
+                        <img style={{ height: 350, borderBottomRightRadius: '1rem', borderTopRightRadius: '1rem' }} src={details1}></img>
                     </div>
                 </div>
                 <div className={styles.card}>
                     <div style={{ display: 'flex' }}>
-                        <img style={{ height: 350, borderBottomLeftRadius: '1rem', borderTopLeftRadius: '1rem' }} src='/src/assets/images/template3/details2.png'></img>
+                        <img style={{ height: 350, borderBottomLeftRadius: '1rem', borderTopLeftRadius: '1rem' }} src={details2}></img>
                     </div>
                     <div className={styles.description}>
                         <p style={{ fontSize: 30, fontWeight: 700, color: '#353535', lineHeight: '112%' }}>Celebrate parties with<span style={{ fontSize: 30, fontWeight: 700, color: '#FFB30E' }}> Fried Chicken</span></p>
@@ -193,7 +207,7 @@ const Template3 = () => {
                         </button>
                     </div>
                     <div style={{ display: 'flex' }}>
-                        <img style={{ height: 350, borderBottomRightRadius: '1rem', borderTopRightRadius: '1rem' }} src='/src/assets/images/template3/details3.png'></img>
+                        <img style={{ height: 350, borderBottomRightRadius: '1rem', borderTopRightRadius: '1rem' }} src={details3}></img>
                     </div>
                 </div>
             </div>
@@ -244,8 +258,6 @@ const Template3 = () => {
                             </button>
                         </div>
                     </div>
-
-
                 </div>
                 <div className={styles.rights}>
                     <div className={styles.line}></div>
