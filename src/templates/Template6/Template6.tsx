@@ -29,10 +29,6 @@ import avatar3 from './assets/avatar3.png'
 import avatar4 from './assets/avatar4.png'
 import advertisement1 from './assets/advertisement1.png'
 
-
-
-
-
 const Template6 = () => {
     return (
         <div className={styles.container}>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 interface ButtonProps {
     children: React.ReactNode
     size?: 'sm' | 'md' | 'lg' | 'xl' | '2xl'
-    hierarchy?: 'primary' | 'secondary' | 'tertiary' | 'outlined'
+    variant?: 'primary' | 'secondary' | 'tertiary' | 'outlined'
     className?: string
     disabled?: boolean
     color?: 'brand' | 'gray' | 'error' | 'warning' | 'success'
@@ -71,7 +71,7 @@ const buttonHierarchy = {
 const Button: React.FC<ButtonProps> = ({
     children,
     size = 'md',
-    hierarchy = 'primary',
+    variant = 'primary',
     disabled,
     color = 'brand',
     startIcon,
@@ -83,15 +83,15 @@ const Button: React.FC<ButtonProps> = ({
 
     const borderColor = disabled ? BORDER_COLORS[color]?.disabled : BORDER_COLORS[color]?.default;
 
-    const colorClass = COLOR_CLASSES[hierarchy]?.[color] || COLOR_CLASSES.primary.brand;
+    const colorClass = COLOR_CLASSES[variant]?.[color] || COLOR_CLASSES.primary.brand;
 
-    const CustomClassName = `${SIZES[size]} ${buttonHierarchy[hierarchy]} ${colorClass} ${className}`
+    const CustomClassName = `${SIZES[size]} ${buttonHierarchy[variant]} ${colorClass} ${className}`
 
     return (
         <motion.button
             className={CustomClassName}
             disabled={disabled}
-            style={hierarchy === 'outlined' ?
+            style={variant === 'outlined' ?
                 {
                     WebkitBoxSizing: 'border-box',
                     MozBoxSizing: 'border-box',

@@ -6,9 +6,10 @@ import Template3 from '../templates/Template3/Template3';
 import Template4 from '../templates/Template4/Template4';
 import Template5 from '../templates/Template5/Template5';
 import Template6 from '../templates/Template6/Template6';
+import Template7 from '../templates/Template7/Template7';
 
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
-import IconButton from '../components/IconButton';
+import IconButton from '../components/FAB';
 
 
 function LandingPages() {
@@ -32,6 +33,8 @@ function LandingPages() {
         return <Template5 />;
       case 6:
         return <Template6 />;
+      case 7:
+        return <Template7 />;
       default:
         return <Template1 />;
     }
@@ -41,7 +44,7 @@ function LandingPages() {
     if (page == 1) {
       setIsDisabled({ ...isDisabled, left: true, right: false })
     }
-    else if (page == 6) {
+    else if (page == 7) {
       setIsDisabled({ ...isDisabled, left: false, right: true })
     }
     else {
@@ -62,7 +65,7 @@ function LandingPages() {
           <p>
             <span>{page} </span>
             of
-            <span> 6</span>
+            <span> 7</span>
           </p>
         </div>
         <IconButton size='lg' hierarchy="primary" onClick={() => setPage(prev => prev + 1)} className='rounded-tl-none rounded-bl-none' disabled={isDisabled.right}>

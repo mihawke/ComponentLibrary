@@ -17,7 +17,7 @@ const Dropdown: React.FC<DropdownProps> = () => {
             >
                 <p className="text-sm text-cgray-700 font-medium">Select</p>
                 {isVisible ?
-                    <FaAngleDown color="#344054" /> : <FaAngleUp color="#344054" />}
+                    <FaAngleUp color="#344054" /> : <FaAngleDown color="#344054" />}
             </button>
             <div
                 className="flex flex-col mt-1 border-[1px] bg-white border-gray-300 rounded-lg shadow-md z-10 absolute top-[100%] left-0"

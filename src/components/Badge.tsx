@@ -6,19 +6,21 @@ interface BadgeProps {
     iconPosition?: 'left' | 'right' | 'only'
     size?: 'sm' | 'md' | 'lg'
     color?: 'brand' | 'gray' | 'error' | 'warning' | 'success'
+    className?: string
 }
 
 const Badge: React.FC<BadgeProps> = ({
     children,
-    size,
+    size='md',
     iconPosition = 'left',
     icon,
-    color
+    color,
+    className
 
 }) => {
 
     const getSize = () => {
-        if (icon === undefined){
+        if (icon === undefined) {
             switch (size) {
                 case 'sm':
                     return 'px-2.5 py-[2px] text-xs'
@@ -123,14 +125,14 @@ const Badge: React.FC<BadgeProps> = ({
         }
     }
 
-    const customClassName = `flex flex-row h-fit w-fit font-medium items-center rounded-2xl gap-1.5 relative ${getColor()} ${getSize()}`
+    const customClassName = `flex h-fit w-fit font-medium items-center rounded-full gap-1.5 relative ${getColor()} ${getSize()} ${className}`
 
 
     return (
         <div className={customClassName}>
-            {iconPosition === 'left'? icon : null}
-            {iconPosition === 'only'? icon : children}
-            {iconPosition === 'right'? icon : null}
+            {iconPosition === 'left' ? icon : null}
+            {iconPosition === 'only' ? icon : children}
+            {iconPosition === 'right' ? icon : null}
         </div>
     )
 }

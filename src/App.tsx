@@ -5,7 +5,7 @@ import Components from './pages/Components.tsx';
 import Home from './pages/Home.tsx';
 import LandingPages from './pages/LandingPages.tsx';
 import { FaBars } from 'react-icons/fa';
-import IconButton from './components/IconButton';
+import IconButton from './components/FAB.tsx';
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
           <IconButton size='lg' hierarchy="primary" onClick={()=>setShowMenu(prev => !prev)}>
             <FaBars/>
             </IconButton>
-          <nav className={`flex flex-row items-center bg-white ${showMenu? '':'hidden'}`}>
+          <nav className={`flex flex-row items-center bg-white ${showMenu? '':'hidden'} shadow-xl rounded-md`}>
             <Link
               to="/"
               onClick={()=>setShowMenu(false)}
