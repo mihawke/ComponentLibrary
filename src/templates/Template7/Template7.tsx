@@ -30,8 +30,8 @@ const Template7 = () => {
                     <h2 className='text-[60px] font-bold text-gray-900 mt-4 mb-6'>Beautiful analytics to grow smarter</h2>
                     <p className='text-lg w-[770px] text-center text-gray-600'>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
                     <div className='flex gap-3 mt-12'>
-                        <Button hierarchy='outlined' size='2xl' startIcon={<FaRegPlayCircle size={24} />}>Demo</Button>
-                        <Button hierarchy='primary' size='2xl'>Sign up</Button>
+                        <Button variant='outlined' size='2xl' startIcon={<FaRegPlayCircle size={24} />}>Demo</Button>
+                        <Button variant='primary' size='2xl'>Sign up</Button>
                     </div>
                 </div>
                 <div className='flex flex-1 max-h-[480px] overflow-hidden relative'>
