@@ -6,7 +6,7 @@ interface ComponentsNavigationProps {
 }
 
 const ComponentsNavigation: React.FC<ComponentsNavigationProps> = ({ onSelect, currentComponent }) => {
-  const components = ['Button', 'FAB', 'RadioButton', 'Links', 'Loading', 'Skeleton', 'DatePicker', 'Tooltip', 'InputField', 'Badge', 'Dropdown', 'Toggle', 'Checkbox', 'Slider', 'ProgressIndicator', 'ProgressCircle']; // Example list of components
+  const components = ['Button', 'FAB', 'RadioButton', 'Links', 'Loading', 'Skeleton', 'DatePicker', 'Tooltip', 'InputField', 'Badge', 'Dropdown', 'Toggle', 'Checkbox', 'Slider', 'ProgressIndicator', 'ProgressCircle','Card']; // Example list of components
 
   return (
     <nav className="bg-brand-900 min-w-fit h-[650px] border-gray-300 overflow-y-auto">

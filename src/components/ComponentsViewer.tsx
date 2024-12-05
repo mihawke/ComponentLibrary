@@ -17,6 +17,7 @@ import Loading from '../components/Loading'
 import Skeleton from '../components/Skeleton'
 import Link from '../components/Link'
 import RadioButton from '../components/RadioButton'
+import Card from './Card'
 
 interface ComponentsViewerProps {
   currentComponent: string | void;
@@ -43,7 +44,7 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
               </div>
             </div>
           </section>
-          : <></>
+          : null
       }
       {
         currentComponent == 'Links' ?
@@ -54,7 +55,7 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
               <Link href="#" underline="hover">Underline on Hover</Link>
               <Link href="#" underline="always">Always Underlined</Link>
             </div>
-          </section> : ''
+          </section> : null
       }
       {
         currentComponent == 'Loading' ?
@@ -76,7 +77,7 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
                 </>
               )}
             </div>
-          </section> : ''
+          </section> : null
       }
       {
         currentComponent == 'Skeleton' ?
@@ -88,7 +89,7 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
               <Skeleton variant="rectangular" width={150} height={50} />
               <Skeleton variant="rounded" width={50} height={50} />
             </div>
-          </section> : ''
+          </section> : null
       }
       {
         currentComponent == 'DatePicker' ?
@@ -109,7 +110,7 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
                 onChange={(e) => setDate(e.target.value)}
               />
             </div>
-          </section> : ''
+          </section> : null
       }
       {
         currentComponent == 'Tooltip' ?
@@ -141,7 +142,7 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
                 <Button size="sm" variant="primary">Right</Button>
               </Tooltip>
             </div>
-          </section> : ''
+          </section> : null
       }
       {
         currentComponent == 'Button' ?
@@ -152,7 +153,7 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
               <Button size="sm" variant="outlined" startIcon={<BsGithub size={20} />}>Button</Button>
               <Button size="sm" variant="tertiary" startIcon={<BsGithub size={20} />}>Button</Button>
             </div>
-          </section> : ''
+          </section> : null
       }
       {
         currentComponent == 'FAB' ?
@@ -171,7 +172,7 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
                 <BsGithub />
               </FAB>
             </div>
-          </section> : ''
+          </section> : null
       }
       {
         currentComponent == 'InputField' ?
@@ -193,7 +194,7 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
                 hint="email is not valid"
               />
             </div>
-          </section> : ''
+          </section> : null
       }
       {
         currentComponent == 'Badge' ?
@@ -217,7 +218,7 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
               <Badge iconPosition="right" size="lg" icon={<BsGithub size={16} />} color="error">Label</Badge>
               <Badge iconPosition="only" size="lg" icon={<BsGithub size={16} />} color="error">Label</Badge>
             </div>
-          </section> : ''
+          </section> : null
       }
       {
         currentComponent == 'Dropdown' ?
@@ -226,7 +227,7 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
             <div className="flex flex-row gap-2">
               <Dropdown />
             </div>
-          </section> : ''
+          </section> : null
       }
       {
         currentComponent == 'Toggle' ?
@@ -235,7 +236,7 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
             <div className="flex flex-row gap-2">
               <Toggle setState={() => ''} />
             </div>
-          </section> : ''
+          </section> : null
       }
       {
         currentComponent == 'Checkbox' ?
@@ -246,7 +247,7 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
               <Checkbox checked={true} disabled={true} />
               <Checkbox disabled={true} />
             </div>
-          </section> : ''
+          </section> : null
       }
       {
         currentComponent == 'Slider' ?
@@ -260,7 +261,7 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
               name="slider-name"
               onChange={(e) => setValue(parseInt(e.target.value, 10))}
             />
-          </section> : ''
+          </section> : null
       }
       {
         currentComponent == 'ProgressIndicator' ?
@@ -269,7 +270,7 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
             <div className="flex flex-row gap-2">
               <ProgressIndicator maxValue={100} value={value} label={true} />
             </div>
-          </section> : ''
+          </section> : null
       }
       {
         currentComponent == 'ProgressCircle' ?
@@ -282,16 +283,22 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
               <ProgressCircle maxValue={100} value={value} size="md" label="active users" />
               <ProgressCircle maxValue={100} value={value} size="lg" label="active users" />
             </div>
-          </section> : ''
+          </section> : null
       }
       {
-        currentComponent == '' ? '' : ''
+        currentComponent == 'Card' ?
+          <section>
+            <h2 className="text-lg font-semibold mb-2">Card</h2>
+            <div className="flex flex-row gap-2 items-center flex-wrap">
+              <Card />
+            </div>
+          </section> : null
       }
       {
-        currentComponent == '' ? '' : ''
+        currentComponent == '' ? '' : null
       }
       {
-        currentComponent == '' ? '' : ''
+        currentComponent == '' ? '' : null
       }
     </div>
   )
