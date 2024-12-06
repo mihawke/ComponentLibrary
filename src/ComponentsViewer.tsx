@@ -1,23 +1,25 @@
 import React, { useState } from 'react'
 import { GoDotFill } from 'react-icons/go'
 import { BsGithub } from 'react-icons/bs'
-import Button from '../components/Button'
-import FAB from './FAB'
-import InputField from '../components/InputField'
-import Badge from '../components/Badge'
-import Dropdown from '../components/Dropdown'
-import Toggle from '../components/Toggle'
-import Checkbox from '../components/Checkbox'
-import ProgressIndicator from '../components/ProgressIndicator'
-import ProgressCircle from '../components/ProgressCircle'
-import Slider from '../components/Slider'
-import Tooltip from '../components/Tooltip'
-import DatePicker from '../components/DatePicker'
-import Loading from '../components/Loading'
-import Skeleton from '../components/Skeleton'
-import Link from '../components/Link'
-import RadioButton from '../components/RadioButton'
-import Card from './Card'
+import Button from './components/Button'
+import FAB from './components/FAB'
+import InputField from './components/InputField'
+import Badge from './components/Badge'
+import Dropdown from './components/Dropdown'
+import Toggle from './components/Toggle'
+import Checkbox from './components/Checkbox'
+import ProgressIndicator from './components/ProgressIndicator'
+import ProgressCircle from './components/ProgressCircle'
+import Slider from './components/Slider'
+import Tooltip from './components/Tooltip'
+import DatePicker from './components/DatePicker'
+import Loading from './components/Loading'
+import Skeleton from './components/Skeleton'
+import Link from './components/Link'
+import RadioButton from './components/RadioButton'
+import CardOne from './components/Cards/CardOne'
+import CardTwo from './components/Cards/CardTwo'
+import CardThree from './components/Cards/CardThree'
 
 interface ComponentsViewerProps {
   currentComponent: string | void;
@@ -29,7 +31,7 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
   const [date, setDate] = useState('')
   const [isLoading, setIsLoading] = useState(true)
   return (
-    <div className='flex w-[50%] max-h-[650px] justify-center overflow-y-auto p-20'>
+    <div className='flex w-[50%] justify-center overflow-y-auto p-20 componentViewer'>
       {
         currentComponent == 'RadioButton' ?
           <section>
@@ -288,9 +290,12 @@ const ComponentsViewer: React.FC<ComponentsViewerProps> = ({ currentComponent })
       {
         currentComponent == 'Card' ?
           <section>
-            <h2 className="text-lg font-semibold mb-2">Card</h2>
+            <h2 className="text-lg font-semibold mb-2">Cards</h2>
             <div className="flex flex-row gap-2 items-center flex-wrap">
-              <Card />
+              <CardOne title='Trends' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun...'/>
+              <CardTwo title='Light Themed Glass Card' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun...' secondaryButtonText='Secondary' primaryButtonText='Primary'/>
+              <CardThree title='Light Themed Glass Card' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun...' buttonText='Primary'/>
+              <CardThree theme='dark' title='Dark Themed Glass Card' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun...' buttonText='Primary'/>
             </div>
           </section> : null
       }

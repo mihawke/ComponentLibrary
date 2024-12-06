@@ -9,7 +9,7 @@ const ComponentsNavigation: React.FC<ComponentsNavigationProps> = ({ onSelect, c
   const components = ['Button', 'FAB', 'RadioButton', 'Links', 'Loading', 'Skeleton', 'DatePicker', 'Tooltip', 'InputField', 'Badge', 'Dropdown', 'Toggle', 'Checkbox', 'Slider', 'ProgressIndicator', 'ProgressCircle','Card']; // Example list of components
 
   return (
-    <nav className="bg-brand-900 min-w-fit h-[650px] border-gray-300 overflow-y-auto">
+    <nav className="bg-brand-900 min-w-fit border-gray-300">
       <ul className="text-gray-100">
         {components.map((component, index) => (
           <li

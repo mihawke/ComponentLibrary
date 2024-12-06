@@ -97,6 +97,7 @@ export default {
         'checkbox-disabled':'#E4E7EC 0px 0px 0px 1px',
         'checkbox-hover': '#7F56D9 0px 0px 0px 1px',
         'checkbox-focus': '#D6BBFB 0px 0px 0px 1px , #F4EBFF 0px 0px 0px 4px',
+        'card-elevated': '2px 2px #D0D5DD',
       },
     },
   },

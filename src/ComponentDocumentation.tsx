@@ -6,7 +6,7 @@ interface ComponentDocumentationProps {
 
 const ComponentDocumentation: React.FC<ComponentDocumentationProps> = ({ currentComponent }) => {
   return (
-    <div className='flex w-[50%] max-h-[650px] justify-center overflow-y-auto p-20 border-l'>
+    <div className='flex w-[50%] justify-center overflow-y-auto p-20 border-l'>
       {
         currentComponent == 'RadioButton' ?
           <section>
