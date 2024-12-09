@@ -6,6 +6,7 @@ import Home from './pages/Home.tsx';
 import LandingPages from './pages/LandingPages.tsx';
 import { FaBars } from 'react-icons/fa';
 import IconButton from './components/FAB.tsx';
+import Template8 from './templates/Template8/Template8.tsx';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="flex flex-col w-full h-full relative">
+      {/* <div className="flex flex-col w-full h-full relative">
         <div className='fixed top-4 left-4 flex flex-row items-center z-50'>
           <IconButton size='lg' hierarchy="primary" onClick={()=>setShowMenu(prev => !prev)}>
             <FaBars/>
@@ -41,7 +42,8 @@ function App() {
           <Route path="/components" element={<Components />} />
           <Route path="/landing-pages" element={<LandingPages />} />
         </Routes>
-      </div>
+      </div> */}
+      <Template8></Template8>
     </BrowserRouter>
   );
 }
